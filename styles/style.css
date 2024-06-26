@@ -172,6 +172,8 @@
 }
 .card__image-wrapper {
   position: relative;
+  max-height: 700px;
+  overflow: hidden;
 }
 .card__image-label {
   font-family: var(--accent-font), fantasy, sans-serif;
