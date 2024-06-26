@@ -18,10 +18,10 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: 'wght' var(--font-weight-card-text) var(--font-weight-card-title);
+  font-variation-settings: "wght" var(--font-weight-card-text) var(--font-weight-card-title);
   color: var(--accent-color);
   background-color: var(--background-color);
-  background-image: var(--background-image);                  
+  background-image: var(--background-image);
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -47,7 +47,6 @@
 .header__title {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-decoration: none;
-
 }
 .header__text {
   text-transform: uppercase;
@@ -76,24 +75,24 @@
   transition: opacity 1s;
 }
 .theme-menu__button::before {
-  content: '';
+  content: "";
   padding: 0;
 }
 
 .theme-menu__button:disabled {
   opacity: 0.6;
   pointer-events: none;
-} 
+}
 
 .theme-menu__button:disabled::before {
-  content: '▶';
+  content: "▶";
   animation: arrow_shift 1s infinite;
   animation-timing-function: ease-in-out;
   animation-duration: alternate;
   position: absolute;
   left: -85px;
   top: 0;
-} 
+}
 .theme-menu__item {
   position: relative;
   padding-inline-start: 21px;
@@ -113,7 +112,7 @@
 }
 
 .theme-menu__button::after {
-  content: '';
+  content: "";
   display: block;
   width: 0%;
   height: 2px;
@@ -185,7 +184,7 @@
   mix-blend-mode: hard-light;
   color: var(--accent-color);
   -webkit-text-stroke-width: 1;
-  -webkit-text-stroke-color: #FFF;
+  -webkit-text-stroke-color: #fff;
   text-shadow: 0px 0px 5px black;
   opacity: 0.5;
 }
@@ -197,7 +196,7 @@
 .card__text {
   font-size: 18px;
   line-height: 21px;
-  font-variation-settings: 'wght' var(--font-weight-card-text);
+  font-variation-settings: "wght" var(--font-weight-card-text);
 }
 .card__button__container {
   display: flex;
@@ -241,12 +240,12 @@
   width: 335px;
   padding-block: 15px;
 }
-@supports((text-stroke: 1px #FFF) or (-webkit-text-stroke: 1px #FFF)) {
+@supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
   .img__label {
-      -webkit-text-stroke: 1px #FFF;
-      text-shadow: none;
+    -webkit-text-stroke: 1px #fff;
+    text-shadow: none;
   }
-} 
+}
 
 .card_title {
   font-size: 18px;
@@ -254,7 +253,7 @@
   padding-inline-start: 10px;
   padding-block: 5px 5px;
   line-height: 21px;
-  font-variation-settings: 'wght' var(--font-weight-card-title);
+  font-variation-settings: "wght" var(--font-weight-card-title);
 }
 
 .card__text {
@@ -262,7 +261,7 @@
   padding: 25px 25px 0px;
   font-size: 18px;
   line-height: 21px;
-  font-variation-settings: 'wght' var(--font-weight-card-text);
+  font-variation-settings: "wght" var(--font-weight-card-text);
 }
 
 .button {
@@ -289,7 +288,7 @@
 }
 
 .button::after {
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   width: 100%;
@@ -369,7 +368,7 @@
 
 .modal-window::backdrop {
   background-color: rgb(0 0 0 / 0.75);
-} 
+}
 
 .modal-window {
   background-color: var(--background-color);
@@ -444,7 +443,7 @@
   .dialog__button {
     flex-direction: column;
     width: 306px;
-  } 
+  }
 
   .floppy {
     width: 28px;
@@ -453,4 +452,4 @@
   .modal-window_button {
     width: 257px;
   }
-  }
+}
