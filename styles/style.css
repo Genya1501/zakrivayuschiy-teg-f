@@ -18,7 +18,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: "wght" var(--font-weight-card-text) var(--font-weight-card-title);
+  font-variation-settings: "wght" var(--font-weight-card-text);
   color: var(--accent-color);
   background-color: var(--background-color);
   background-image: var(--background-image);
@@ -116,12 +116,11 @@
   height: 2px;
   margin-top: 2px;
   background-color: var(--accent-color);
-  transition: transform 0.3s ease;
+  transition: width 0.6s, transform 0.3s ease;
 }
 
 .theme-menu__button:focus-visible::after {
   width: 100%;
-  background-color: var(--accent-color);
 }
 
 .content {
@@ -195,21 +194,7 @@
   max-height: 700px;
   overflow: hidden;
 }
-.card__image-label {
-  font-family: var(--accent-font), fantasy, sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  position: absolute;
-  inset-inline-end: 0;
-  padding-inline-end: 25px;
-  padding-block-start: 27px;
-  mix-blend-mode: hard-light;
-  color: var(--accent-color);
-  -webkit-text-stroke-width: 1;
-  -webkit-text-stroke-color: #fff;
-  text-shadow: 0px 0px 5px black;
-  opacity: 0.5;
-}
+
 .card__text-wrapper {
   display: grid;
   gap: 27px;
@@ -429,7 +414,10 @@
     position: relative;
     overflow: hidden;
   }
-
+.img__label {
+  padding-inline-end: 10px;
+  padding-block-start: 29px;
+}
   .card__image {
     width: 100%;
     height: auto;
@@ -450,5 +438,9 @@
   .modal-window_button {
     width: 257px;
     padding: 30px 40px;
+  }
+  .modal-window_form {
+    padding: 30px 40px;
+    max-inline-size: 340px;
   }
 }
